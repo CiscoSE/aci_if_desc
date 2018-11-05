@@ -26,10 +26,10 @@ if __name__ == '__main__':
     # Add your username and password here:
     apicObj.token = apicObj.get_token(username="", password="")
 
-    switchName = ""
-    ifId = ""
-    ifDescription = ""
-    ifName = ""
+    switchName = "" # Name of the switch where the interface is located
+    ifId = "" # Id of the interface that description needs to be changed
+    ifDescription = "" # Description to associate with interface
+    ifName = "" # Name to associate with interface
 
     pods = apicObj.getPods()
     for pod in pods:
