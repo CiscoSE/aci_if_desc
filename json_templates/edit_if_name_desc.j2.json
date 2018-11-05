@@ -1,0 +1,21 @@
+{
+  "infraHPathS": {
+    "attributes": {
+      "dn": "uni/infra/hpaths-{{ name }}",
+      "name": "{{ name }}",
+      "status": "created",
+      "descr": "{{ description }}",
+      "rn": "hpaths-{{ name }}"
+    },
+    "children": [
+      {
+        "infraRsHPathAtt": {
+          "attributes": {
+            "tDn": "topology/{{ podId }}/paths-{{ swithId }}/pathep-[{{ ifId }}]"
+          },
+          "children": []
+        }
+      }
+    ]
+  }
+}
